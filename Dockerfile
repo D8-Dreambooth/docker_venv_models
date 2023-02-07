@@ -1,5 +1,5 @@
-ARG BASE_IMAGE=digitalhigh/dreambooth_base:latest
-FROM ${BASE_IMAGE} as cuda-base
+ARG BASE_IMAGE=ubuntu:18.04
+FROM ${BASE_IMAGE} as buntu-base
 
 WORKDIR /workspace
 
