@@ -10,6 +10,6 @@ WORKDIR /workspace
 
 WORKDIR /workspace/
 RUN mkdir /workspace/models
-RUN wget https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors -O /workspace/models/v1-5-pruned.safetensors
-RUN wget https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-nonema-pruned.safetensors -O /workspace/models/v2-1_768-nonema-pruned.safetensors
-RUN wget https://huggingface.co/ckpt/stable-diffusion-2-1/raw/main/v2-inference-v.yaml -O /workspace/models/v2-1_768-nonemaema-pruned.yaml
+RUN wget https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors -O /workspace/models/v1-5-pruned.safetensors --no-check-certificate
+RUN wget https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-nonema-pruned.safetensors -O /workspace/models/v2-1_768-nonema-pruned.safetensors --no-check-certificate
+RUN wget https://huggingface.co/ckpt/stable-diffusion-2-1/raw/main/v2-inference-v.yaml -O /workspace/models/v2-1_768-nonemaema-pruned.yaml --no-check-certificate
