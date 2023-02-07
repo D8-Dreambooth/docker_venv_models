@@ -1,6 +1,11 @@
 ARG BASE_IMAGE=ubuntu:18.04
 FROM ${BASE_IMAGE} as buntu-base
 
+RUN apt-get update --yes && \
+    apt install --yes --no-install-recommends\
+    wget &&\
+    echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
+
 WORKDIR /workspace
 
 WORKDIR /workspace/
